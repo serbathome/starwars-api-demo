@@ -1,0 +1,41 @@
+
+please give me with specific command line command, which will create a new an empty dotnet8 project with the name starwars in the folder with the same name with simple unit test using Xunit. please provide me a list of command, which I can run in Windows in powershell terminal. Don't do anything above what I asked.
+
+
+please show me how to upgrade junit to latest version of xunit, use dotnet list package --outdated command and install latests packages and dependcies. Don't do anything above what I asked.
+
+
+Can you help me create a Character class in my startwars application which structure is returned by the public Star Wars API. Please use the following json, make sure all fields are named exactly as in this json:  
+
+--- JSON PAYLOAD --- 
+
+{ "name": "Luke Skywalker", "height": "172", "mass": "77", "hair_color": "blond", "skin_color": "fair", "eye_color": "blue", "birth_year": "19BBY", "gender": "male", "homeworld": "https://swapi.info/api/planets/1", "films": [ "https://swapi.info/api/films/1", "https://swapi.info/api/films/2", "https://swapi.info/api/films/3", "https://swapi.info/api/films/6" ], "species": [], "vehicles": [ "https://swapi.info/api/vehicles/14", "https://swapi.info/api/vehicles/30" ], "starships": [ "https://swapi.info/api/starships/12", "https://swapi.info/api/starships/22" ], "created": "2014-12-09T13:50:51.644000Z", "edited": "2014-12-20T21:17:56.891000Z", "url": "https://swapi.info/api/people/1" }
+---
+Don't do anything above what I asked.
+
+
+Can you help me create a plain C# interface that queries the Star Wars API and returns a Character object? I would like to start with just one method for querying Luke Skywalker. The interface should be called IStarWarsAPI. Don't implement any tests or samples of usage. Don't do anything above what I asked.
+
+
+/tests Create a test that is checking if the retrieved object from the Star Wars API is fine. Check Name and Hight fields only. Don't create any mocks. Tests might fail if there is no implementation yet. Assume implementation class is called StarWarsAPIImpl. Don't do anything above what I asked.
+
+
+Create implementation class for StarWarsAPI interface, whith the name StarWarsAPIImpl, which will implement method getLukeSkywalker in the following way:
+1. instantiate a http client object
+2. create a HttpRequest object using the GET method and the url https://swapi.info/api/people/1
+3. send the request and retrieve the response
+4. parse the response body to a Character object
+5. return the Character object
+Don't do anything above what I asked.
+
+
+Add getDarthVader method to the StarWarsAPI interface. Don't do anything above what I asked.
+
+
+Add implementation of getDarthVader to the StarWarsAPIImpl class same way as for getLukeSkywalker method. Don't do anything above what I asked.
+
+
+/tests Add test for getDarthVader method in StarWarsAPITest class same as in testGetLukeSkywalker, use implementation of the StarWarsAPI interface in the StarWarsAPIImpl class. Don't do anything above what I asked.
+
+
+Can you help me refactoring StarWarsAPIImpl class to use a private method getStarWarsCharacter to retrieve the payloads and avoid duplicated code in the different methods. I want to provide an Id to the private method. I need the whole refactored class as a result including the getLukeSkywalker and getDarthVaeder methods. Don't do anything above what I asked.
