@@ -29,7 +29,7 @@ Pick either `dotnet/` or `java/` folder and follow the prompts in `prompts.txt`.
 
 ### Step 2: Use GitHub Copilot with Prompts
 1. Open the `prompts.txt` file for your chosen language
-2. Copy each prompt and paste it as a comment in your code
+2. Copy each prompt and paste it in GitHub Copilot chat in Agent mode
 3. Let GitHub Copilot generate the code based on the prompt
 4. Use GitHub Copilot Chat for clarifications and iterations
 
